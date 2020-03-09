@@ -1,3 +1,10 @@
+/*BANNER-INERIOR*/
+.bannerInterior figure{
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
 /*TESTIMONIOS*/
 
 .testimonios{
