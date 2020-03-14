@@ -239,5 +239,17 @@ if(window.matchMedia("(max-width:768px)").matches){
     })
 }
 
+/*SLIDE HABITACIONES*/
+$('.slideHabitaciones').jdSlider({
+    isSliding:true,
+    isAuto: true,
+    isLoop: true,
+    isDreg: true,
+    interval: 3000,
+    isCursosr: false,
+    margin: 0,
+    timingFunction: 'ease',
+    easing: 'swing'
+});
 
 

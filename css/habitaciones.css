@@ -1,9 +1,45 @@
 /*BANNER-INERIOR*/
+
 .bannerInterior figure{
     position: relative;
     height: 300px;
     overflow: hidden;
 }
+
+/*INFO-HABITACION*/
+
+.infoHabitacion{
+    position: relative;
+    margin-top: -17px;
+    margin-bottom: -74px;
+}
+.infoHabitacion .colIzqHabitaciones{
+    position: relative;
+    margin-top: -170px;
+}
+.infoHabitacion .colIzqHabitaciones ul li a{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+}
+.infoHabitacion .colIzqHabitaciones ul li a .active{
+    color: #ffe060 !important;
+}
+.infoHabitacion .colIzqHabitaciones .nav-link{
+    border-right: 1px solid white;
+}
+.infoHabitacion .colIzqHabitaciones .fa-angle-right:before{
+    content: "\f105";
+    background: rgba(255, 255, 255, .8) ;
+    padding: 20px 10px;
+}
+.infoHabitacion .colIzqHabitaciones .fa-angle-left:before{
+    content: "\f105";
+    background: rgba(255, 255, 255, .8) ;
+    padding: 20px 10px;
+}
+
+
 
 /*TESTIMONIOS*/
 
