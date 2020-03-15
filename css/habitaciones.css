@@ -9,37 +9,60 @@
 /*INFO-HABITACION*/
 
 .infoHabitacion{
-    position: relative;
-    margin-top: -17px;
-    margin-bottom: -74px;
+	position: relative;
+	margin-top:-20px;
 }
+
 .infoHabitacion .colIzqHabitaciones{
-    position: relative;
-    margin-top: -170px;
+	position:relative;
+	margin-top:-170px;
 }
+
 .infoHabitacion .colIzqHabitaciones ul li a{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 100;
-    font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	font-size:18px;
 }
-.infoHabitacion .colIzqHabitaciones ul li a .active{
-    color: #ffe060 !important;
+
+.infoHabitacion .colIzqHabitaciones ul li a.active{
+	color:#FFE060 !important;
 }
+
 .infoHabitacion .colIzqHabitaciones .nav-link{
-    border-right: 1px solid white;
+	border-right:1px solid white;
 }
+
+
 .infoHabitacion .colIzqHabitaciones .fa-angle-right:before{
     content: "\f105";
-    background: rgba(255, 255, 255, .8) ;
+    background: rgba(255,255,255,.8);
     padding: 20px 10px;
-}
-.infoHabitacion .colIzqHabitaciones .fa-angle-left:before{
-    content: "\f105";
-    background: rgba(255, 255, 255, .8) ;
+ }
+
+.infoHabitacion .colIzqHabitaciones .fa-angle-left:before {
+    content: "\f104";
+    background: rgba(255,255,255,.8);
     padding: 20px 10px;
 }
 
+.colIzqHabitaciones button{
+	border-radius:0;
+	background:black;
+	color:white;
+}
 
+.colIzqHabitaciones p{
+	line-height:30px;
+	color:#666;
+}
+
+.colorTitulos{
+	color:#847059;
+}
+
+.colDerHabitaciones{
+	transition:0.3s all;
+}
 
 /*TESTIMONIOS*/
 
@@ -68,4 +91,7 @@
     background-color: rgba(0, 0, 0, 0);
     border: 2px solid white;
     color: white;
+}
+.colorTitulo {
+    color: black;
 }

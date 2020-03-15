@@ -252,4 +252,50 @@ $('.slideHabitaciones').jdSlider({
     easing: 'swing'
 });
 
+/*360 GRADOS*/
+$("#myPano").pano({
+    img: "img/360.jpg"
+});
 
+/*VISUALIZAR MULTIMMEDIA HABITACION*/
+$(".colIzqHabitaciones button").click(function(){
+
+	var vista = $(this).attr("vista");
+
+	if(vista == "fotos"){
+
+		$(".slideHabitaciones").removeClass("d-none");
+		$(".slideHabitaciones").addClass("d-block");
+
+		$(".videoHabitaciones").addClass("d-none");
+		$(".videoHabitaciones").removeClass("d-block");
+
+		$(".360Habitaciones").addClass("d-none");
+		$(".360Habitaciones").removeClass("d-block");
+	}
+
+	if(vista == "video"){
+
+		$(".videoHabitaciones").removeClass("d-none");
+		$(".videoHabitaciones").addClass("d-block");
+
+		$(".slideHabitaciones").addClass("d-none");
+		$(".slideHabitaciones").removeClass("d-block");
+
+		$(".360Habitaciones").addClass("d-none");
+		$(".360Habitaciones").removeClass("d-block");
+	}
+
+	if(vista == "360"){
+
+		$(".360Habitaciones").removeClass("d-none");
+		$(".360Habitaciones").addClass("d-block");
+
+		$(".slideHabitaciones").addClass("d-none");
+		$(".slideHabitaciones").removeClass("d-block");
+
+		$(".videoHabitaciones").addClass("d-none");
+		$(".videoHabitaciones").removeClass("d-block");
+	}
+
+})

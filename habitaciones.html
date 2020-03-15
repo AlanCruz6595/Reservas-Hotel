@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/plugin/bootstrap-datepicker.standalone.min.css">
     <link rel="stylesheet" href="css/plugin/jquery.jdSlider.css">
+    <link rel="stylesheet" href="css/plugin/jquery.pano.css">
     <link rel="stylesheet" href="css/habitaciones.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -27,6 +28,7 @@
     <script src="js/plugin/jquery.easing.js"></script>
     <script src="js/plugin/jquery.jdSlider-latest.js"></script>
     <script src="js/plugin/jquery.scrollUp.min.js"></script>
+    <script src="js/plugin/jquery.pano.js"></script>
 
 </head>
 
@@ -237,12 +239,12 @@
     </div>
 
     <!--HABITACION-INFO-->
-    <div class="infoHabitacion container-fluid py-5 text-white bg-white">
+    <div class="infoHabitacion container-fluid bg-white p-0 pb-5">
         <div class="container">
             <div class="row">
 
                 <!--BOQUE IZQUIERDO-->
-                <div class="col-12 col-lg-8 colIzqHabitaciones">
+                <div class="col-12 col-lg-8 colIzqHabitaciones p-0">
 
                     <!--CABECERA HABITACIONES-->
                     <div class="pt-0 cabecarHabitaciones">
@@ -276,546 +278,580 @@
 
                     <!--MULTIMEDIA HABITACIONES-->
 
-                     <!--SLIDE-->
+                    <!--SLIDE-->
 
-                     <div class="banner container-fluid p-0">
-                        <div class="jd-slider fade-slider">
-                            <div class="slide-inner">
-                                <ul class="slide-area">
-                                    <li>
-                                        <img src="img/banner01.jpg" width="100%">
-                                    </li>  
-                                    <li>
-                                        <img src="img/banner02.jpg" width="100%">
-                                    </li> 
-                                    <li>
-                                        <img src="img/banner03.jpg" width="100%">
-                                    </li>  
-                                    <li>
-                                        <img src="img/banner04.jpg" width="100%">
-                                    </li>   
-                                </ul>
-                            </div>
-                            <div class="controller d-none">
-                                <a class="auto" href="#">
-                                    <i class="fas fa-play fa-xs"></i>
-                                    <i class="fas fa-pause fa-xs"></i>
-                                </a>
-                                <div class="indicate area"></div>
-                            </div>
-                            <div class="verMas text-center bg-white rounded-circle d-none d-lg-block" vinculo="#planes">
-                                <i class="fas fa-chevron-down"></i>
+                    <section class="jd-slider mb-3 my-lg-3 slideHabitaciones">
+                        <div class="slide-inner">
+                            <ul class="slide-area">
+                                <li>
+                                    <img src="img/oriental.png" class="img-fluid">
+                                </li>
+                                <li>
+                                    <img src="img/oriental.png" class="img-fluid">
+                                </li>
+                                <li>
+                                    <img src="img/oriental.png" class="img-fluid">
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="prev d-none d-lg-block" href="#">
+                            <i class="fas fa-angle-left fa-2x"></i>
+                        </a>
+                        <a class="next d-none d-lg-block" href="#">
+                            <i class="fas fa-angle-right fa-2x"></i>
+                        </a>
+                        <div class="controller d-block d-lg-none">
+
+                            <div class="indicate-area"></div>
+                        </div>
+                    </section>
+
+                    <!--VIDEO-->
+
+                    <section class="my-3 my-lg-3 videoHabitaciones d-none">
+					
+                        <iframe width="100%" height="380" src="https://www.youtube.com/embed/JTu790_yyRc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    
+                    </section>
+    
+
+                    <!--360 GRADOS-->
+
+                    <section class="my-3 my-lg-3 360Habitaciones d-none">
+                        <div id="myPano" class="pano">
+                            <div class="controls">
+                                <a href="#" class="left">&laquo;</a>
+                                <a href="#" class="right">&raquo;</a>
                             </div>
                         </div>
-                    </div>
-                    
+                    </section>
+
 
                     <!--DESCRIPCION HABITACIONES-->
-                </div>
 
-                <!--BOQUE DERECHO-->
-                <div class="col-12 col-lg-8 colDerHabitaciones">
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--TESTIMONIOS-->
-    <div class="testimonios container-fluid py-5 text-white">
-        <div class="container mb-3">
-            <h1 class="text-center py-5">TESTIMONIOS</h1>
-            <div class="row">
-                <div class="col-12 col-lg-3 text-center p-4">
-                    <img src="img/testimonio01.png" class="img-fluid rounded-circle">
-                    <h4 class="py-4">Lorem ipsum dolor</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam magnam commodi voluptatem at
-                        possimus accusamus! Tenetur eos rem corporis quia ducimus consequuntur aut eius repellat in?
-                        Laudantium, corporis. Laborum, id.</p>
-                </div>
-                <div class="col-12 col-lg-3 text-center p-4">
-                    <img src="img/testimonio02.png" class="img-fluid rounded-circle">
-                    <h4 class="py-4">Lorem ipsum dolor</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam magnam commodi voluptatem at
-                        possimus accusamus! Tenetur eos rem corporis quia ducimus consequuntur aut eius repellat in?
-                        Laudantium, corporis. Laborum, id.</p>
-                </div>
-                <div class="col-12 col-lg-3 text-center p-4">
-                    <img src="img/testimonio03.png" class="img-fluid rounded-circle">
-                    <h4 class="py-4">Lorem ipsum dolor</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam magnam commodi voluptatem at
-                        possimus accusamus! Tenetur eos rem corporis quia ducimus consequuntur aut eius repellat in?
-                        Laudantium, corporis. Laborum, id.</p>
-                </div>
-                <div class="col-12 col-lg-3 text-center p-4">
-                    <img src="img/testimonio04.png" class="img-fluid rounded-circle">
-                    <h4 class="py-4">Lorem ipsum dolor</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam magnam commodi voluptatem at
-                        possimus accusamus! Tenetur eos rem corporis quia ducimus consequuntur aut eius repellat in?
-                        Laudantium, corporis. Laborum, id.</p>
-                </div>
-            </div>
-            <button class="btn btn-default float-right px-4">VER MÁS</button>
-        </div>
-    </div>
-
-    <!-- PLANES-->
-    <div class="planes container-fluid bg-white p-0" id="planes">
-        <div class="container p-0">
-            <div class="grid-contenedor">
-                <div class="grid-item">
-                    <h1 class="text-center py-3 py-lg-5 tituloPlan" tituloPlan="BIENVENIDO">BIENVENIDO</h1>
-                    <p class="text-muted text-left px-4 descripcionPlan"
-                        descripcionPlan="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, nam tempora voluptatem ullam ex dolorum officiis consectetur nulla possimus a praesentium expedita, et nostrum nesciunt consequuntur unde. Obcaecati, perspiciatis. Nihil?">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, nam tempora voluptatem
-                        ullam ex dolorum officiis consectetur nulla possimus a praesentium expedita, et nostrum nesciunt
-                        consequuntur unde. Obcaecati, perspiciatis. Nihil?</p>
-                </div>
-                <div class="grid-item mt-3 d-none d-lg-block" data-toggle="modal" data-target="#modalPlanes">
-                    <figure class="text-center">
-                        <h1 descripcion="Lorem fhjskdhfjlsdfhjls8iofu8g">PLAN ROMANTICO</h1>
-                    </figure>
-                    <img src="img/plan-romantico.png" class="img-fluid" width="100%">
-                </div>
-                <div class="grid-item d-none d-lg-block" data-toggle="modal" data-target="#modalPlanes">
-                    <figure class="text-center">
-                        <h1 descripcion="jhklsdhfñlkasddjdfñalskdjdd">PLAN LUNA DE MIEL</h1>
-                    </figure>
-                    <img src="img/luna-de-miel.png" class="img-fluid" width="100%">
-                </div>
-                <div class="grid-item d-none d-lg-block" data-toggle="modal" data-target="#modalPlanes">
-                    <figure class="text-center">
-                        <h1 descripcion="fjskdfjsñlkdjfñlsadf">PLAN AVENTURA</h1>
-                    </figure>
-                    <img src="img/plan-aventura.png" class="img-fluid" width="100%">
-                </div>
-                <div class="grid-item d-none d-lg-block" data-toggle="modal" data-target="#modalPlanes">
-                    <figure class="text-center">
-                        <h1 descripcion="fjsdlkñjñlkdsjgñdlsfjgfgdfsgf">PLAN SPA</h1>
-                    </figure>
-                    <img src="img/plan-spa.png" class="img-fluid" width="100%">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- HABITACIONES-->
-    <div class="habitaciones container-fluid bg-light" id="habitaciones">
-        <div class="container">
-            <h1 class="pt-4 text-center">HABITACIONES</h1>
-            <div class="row p-4 text-center">
-                <div class="col-12 col-lg-4 pb-3 px-0 px-lg-3">
-                    <a href="habitaciones.html">
-                        <figure class="text-center">
-                            <img src="img/habitacion01.png" class="img-fluid" width="100%">
-                            <p class="small py-4 mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                            <h3 class="py-2 text-gray-dark mb-0">Desde $300 MX</h3>
-                            <h5 class="py-2 text-gray-dark border">Ver detalles <i
-                                    class="fas fa-chevron-right ml-2"></i></h5>
-                            <h1 class="text-white p-3 mx-auto w-50 lead" style="background: #f51b5a">SUITE</h1>
-                        </figure>
-                    </a>
-                </div>
-                <div class="col-12 col-lg-4 pb-3 px-0 px-lg-3">
-                    <a href="habitaciones.html">
-                        <figure class="text-center">
-                            <img src="img/habitacion02.png" class="img-fluid" width="100%">
-                            <p class="small py-4 mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                            <h3 class="py-2 text-gray-dark mb-0">Desde $300 MX</h3>
-                            <h5 class="py-2 text-gray-dark border">Ver detalles <i
-                                    class="fas fa-chevron-right ml-2"></i></h5>
-                            <h1 class="text-white p-3 mx-auto w-50 lead" style="background: #22c1cc">ESPECIAL</h1>
-                        </figure>
-                    </a>
-                </div>
-                <div class="col-12 col-lg-4 pb-3 px-0 px-lg-3">
-                    <a href="habitaciones.html">
-                        <figure class="text-center">
-                            <img src="img/habitacion03.png" class="img-fluid" width="100%">
-                            <p class="small py-4 mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                            <h3 class="py-2 text-gray-dark mb-0">Desde $300 MX</h3>
-                            <h5 class="py-2 text-gray-dark border">Ver detalles <i
-                                    class="fas fa-chevron-right ml-2"></i></h5>
-                            <h1 class="text-white p-3 mx-auto w-50 lead" style="background: #1bf564">STANDAR</h1>
-                        </figure>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- PLANES MOVIL-->
-    <div class="d-block d-lg-none planesMovil jd-slider bg-white" id="planesMovil">
-        <h1 class="text-center py-3">PLANES</h1>
-        <div class="slide-inner">
-            <ul class="slide-area">
-                <li>
-                    <a href="#modalPlanes" data-toggle="modal" descripcion="Lorem fhjskdhfjlsdfhjls8iofu8g">
-                        <img src="img/plan-romantico.png">
-                        <h6 class="py-2 text-center">ROMÁNTICO</h6>
-                    </a>
-                </li>
-                <li>
-                    <a href="#modalPlanes" data-toggle="modal" descripcion="jhklsdhfñlkasddjdfñalskdjdd">
-                        <img src="img/luna-de-miel.png">
-                        <h6 class="py-2 text-center">LUNA DE MIEL</h6>
-                    </a>
-                </li>
-                <li>
-                    <a href="#modalPlanes" data-toggle="modal" descripcion="fjskdfjsñlkdjfñlsadf">
-                        <img src="img/plan-aventura.png">
-                        <h6 class="py-2 text-center">AVENTURA</h6>
-                    </a>
-                </li>
-                <li>
-                    <a href="#modalPlanes" data-toggle="modal" descripcion="fjsdlkñjñlkdsjgñdlsfjgfgdfsgf">
-                        <img src="img/plan-spa.png">
-                        <h6 class="py-2 text-center">SPA</h6>
-                    </a>
-                </li>
-            </ul>
-            <a class="prev" href="#">
-                <i class="fas fa-angle-left text-muted"></i>
-            </a>
-            <a class="next" href="#">
-                <i class="fas fa-angle-right text-muted"></i>
-            </a>
-        </div>
-        <div class="controller">
-            <div class="indicate-area"></div>
-        </div>
-    </div>
-
-    <!--RECORRIDO POR EL PUEBLO-->
-    <div class="recorridoPueblo container-fluid bg-white pb-5" id="pueblo">
-        <div class="container">
-            <h1 class="pt-5 text-center">RECORRIDO POR EL PUEBLO</h1>
-            <div class="jd-slider slidePueblo">
-                <div class="slide-inner">
-                    <ul class="slide-area">
-                        <li>
-                            <div class="grid-contenedor pt-4 pb-1 pb-lg-3 px-0 px-lg-5">
-                                <div class="grid-item">
-                                    <img src="img/pueblo01a.png" class="img-fluid" width="100%">
-                                </div>
-                                <div class="grid-item">
-                                    <h1 class="mt-4 mb-0 my-lg-2">LOREMIPSUM</h1>
-                                    <P class="small p-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod
-                                        doloribus quis, reprehenderit laborum est tempora, autem ratione, optio
-                                        explicabo ut iure libero deserunt exercitationem vel. Quae maiores officia
-                                        commodi accusantium.</P>
-                                </div>
-                                <div class="grid-item d-none d-lg-block">
-                                    <img src="img/pueblo01b.png" class="img-fluid" width="100%">
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="grid-contenedor pt-4 pb-1 pb-lg-3 px-0 px-lg-5">
-                                <div class="grid-item">
-                                    <img src="img/pueblo02a.png" class="img-fluid" width="100%">
-                                </div>
-                                <div class="grid-item">
-                                    <h1 class="mt-4 mb-0 my-lg-2">LOREMIPSUM</h1>
-                                    <P class="small p-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod
-                                        doloribus quis, reprehenderit laborum est tempora, autem ratione, optio
-                                        explicabo ut iure libero deserunt exercitationem vel. Quae maiores officia
-                                        commodi accusantium.</P>
-                                </div>
-                                <div class="grid-item d-none d-lg-block">
-                                    <img src="img/pueblo02b.png" class="img-fluid" width="100%">
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="grid-contenedor pt-4 pb-1 pb-lg-3 px-0 px-lg-5">
-                                <div class="grid-item">
-                                    <img src="img/pueblo03a.png" class="img-fluid" width="100%">
-                                </div>
-                                <div class="grid-item">
-                                    <h1 class="mt-4 mb-0 my-lg-2">LOREMIPSUM</h1>
-                                    <P class="small p-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod
-                                        doloribus quis, reprehenderit laborum est tempora, autem ratione, optio
-                                        explicabo ut iure libero deserunt exercitationem vel. Quae maiores officia
-                                        commodi accusantium.</P>
-                                </div>
-                                <div class="grid-item d-none d-lg-block">
-                                    <img src="img/pueblo03b.png" class="img-fluid" width="100%">
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <a class="d-none d-md-block prev" href="#">
-                    <i class="fas fa-angle-left fa-2x" style="color:#1bf564"></i>
-                </a>
-                <a class="d-none d-md-block next" href="#">
-                    <i class="fas fa-angle-right fa-2x" style="color: #f51b5a"></i>
-                </a>
-                <div class="controller">
-                    <div class="indicate-area"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--RESTAURANTE-->
-    <div class="fondoRestaurante container-fluid">
-
-    </div>
-
-    <div class="restaurante container-fluid pt-5" id="restaurante">
-        <div class="container">
-            <div class="grid-contenedor">
-                <div class="grid-item carta">
-                    <div class="row p-1 p-lg-5">
-                        <div class="col-6 col-xs-6 col-md-4 text-center p-1">
-                            <img src="img/plato01.png" class="img-fluid w-50 rounded-circle">
-                            <p class="py-2">Lorem ipsum dolor sit</p>
+                    <div class="descripcionHabitacion px-3">
+                        <h1 class="colorTitulo float-left">ORIENTAL SUITE</h1>
+                        <div class="float-right pt-2">
+                            <button type="button" class="btn btn-default" vista="fotos"><i class="fas fa-camera"></i>
+                                Fotos</button>
+                            <button type="button" class="btn btn-default" vista="video"><i
+                                    class="fas fa-youtube-square"></i> Video</button>
+                            <button type="button" class="btn btn-default" vista="360"><i class="fas fa-video"></i>
+                                360°</button>
                         </div>
-                        <div class="col-6 col-xs-6 col-md-4 text-center p-1">
-                            <img src="img/plato02.png" class="img-fluid w-50 rounded-circle">
-                            <p class="py-2">Lorem ipsum dolor sit</p>
-                        </div>
-                        <div class="col-6 col-xs-6 col-md-4 text-center p-1">
-                            <img src="img/plato03.png" class="img-fluid w-50 rounded-circle">
-                            <p class="py-2">Lorem ipsum dolor sit</p>
-                        </div>
-                        <div class="col-6 col-xs-6 col-md-4 text-center p-1">
-                            <img src="img/plato04.png" class="img-fluid w-50 rounded-circle">
-                            <p class="py-2">Lorem ipsum dolor sit</p>
-                        </div>
-                        <div class="col-6 col-xs-6 col-md-4 text-center p-1">
-                            <img src="img/plato05.png" class="img-fluid w-50 rounded-circle">
-                            <p class="py-2">Lorem ipsum dolor sit</p>
-                        </div>
-                        <div class="col-6 col-xs-6 col-md-4 text-center p-1">
-                            <img src="img/plato06.png" class="img-fluid w-50 rounded-circle">
-                            <p class="py-2">Lorem ipsum dolor sit</p>
-                        </div>
-                        <div class="col-12 text-center d-block d-lg-none">
-                            <button class="btn btn-warning text-uppercase mb-5 volverCarta">Volver</button>
-                        </div>
+                        <div class="clearfix mb-4"></div>
+                        
+                    </div>
+
+                    <!--BOQUE DERECHO-->
+                    <div class="col-12 col-lg-8 colDerHabitaciones">
+
                     </div>
                 </div>
-                <div class="grid-item bloqueRestaurant">
-                    <h1 class="mt-4 my-lg-5">RESTAURANTE</h1>
-                    <p class="p-4 my-lg-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus amet eum
-                        earum consequatur molestias assumenda voluptates laudantium fuga perferendis mollitia rerum
-                        fugit ullam qui asperiores officiis beatae harum, velit impedit?</p>
-                    <button class="btn btn-danger text-uppercase mb-5 verCarta">Ver la carta</button>
+            </div>
+        </div>
+
+        <!--TESTIMONIOS-->
+        <div class="testimonios container-fluid py-5 text-white">
+            <div class="container mb-3">
+                <h1 class="text-center py-5">TESTIMONIOS</h1>
+                <div class="row">
+                    <div class="col-12 col-lg-3 text-center p-4">
+                        <img src="img/testimonio01.png" class="img-fluid rounded-circle">
+                        <h4 class="py-4">Lorem ipsum dolor</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam magnam commodi voluptatem at
+                            possimus accusamus! Tenetur eos rem corporis quia ducimus consequuntur aut eius repellat in?
+                            Laudantium, corporis. Laborum, id.</p>
+                    </div>
+                    <div class="col-12 col-lg-3 text-center p-4">
+                        <img src="img/testimonio02.png" class="img-fluid rounded-circle">
+                        <h4 class="py-4">Lorem ipsum dolor</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam magnam commodi voluptatem at
+                            possimus accusamus! Tenetur eos rem corporis quia ducimus consequuntur aut eius repellat in?
+                            Laudantium, corporis. Laborum, id.</p>
+                    </div>
+                    <div class="col-12 col-lg-3 text-center p-4">
+                        <img src="img/testimonio03.png" class="img-fluid rounded-circle">
+                        <h4 class="py-4">Lorem ipsum dolor</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam magnam commodi voluptatem at
+                            possimus accusamus! Tenetur eos rem corporis quia ducimus consequuntur aut eius repellat in?
+                            Laudantium, corporis. Laborum, id.</p>
+                    </div>
+                    <div class="col-12 col-lg-3 text-center p-4">
+                        <img src="img/testimonio04.png" class="img-fluid rounded-circle">
+                        <h4 class="py-4">Lorem ipsum dolor</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam magnam commodi voluptatem at
+                            possimus accusamus! Tenetur eos rem corporis quia ducimus consequuntur aut eius repellat in?
+                            Laudantium, corporis. Laborum, id.</p>
+                    </div>
+                </div>
+                <button class="btn btn-default float-right px-4">VER MÁS</button>
+            </div>
+        </div>
+
+        <!-- PLANES-->
+        <div class="planes container-fluid bg-white p-0" id="planes">
+            <div class="container p-0">
+                <div class="grid-contenedor">
+                    <div class="grid-item">
+                        <h1 class="text-center py-3 py-lg-5 tituloPlan" tituloPlan="BIENVENIDO">BIENVENIDO</h1>
+                        <p class="text-muted text-left px-4 descripcionPlan"
+                            descripcionPlan="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, nam tempora voluptatem ullam ex dolorum officiis consectetur nulla possimus a praesentium expedita, et nostrum nesciunt consequuntur unde. Obcaecati, perspiciatis. Nihil?">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, nam tempora voluptatem
+                            ullam ex dolorum officiis consectetur nulla possimus a praesentium expedita, et nostrum
+                            nesciunt
+                            consequuntur unde. Obcaecati, perspiciatis. Nihil?</p>
+                    </div>
+                    <div class="grid-item mt-3 d-none d-lg-block" data-toggle="modal" data-target="#modalPlanes">
+                        <figure class="text-center">
+                            <h1 descripcion="Lorem fhjskdhfjlsdfhjls8iofu8g">PLAN ROMANTICO</h1>
+                        </figure>
+                        <img src="img/plan-romantico.png" class="img-fluid" width="100%">
+                    </div>
+                    <div class="grid-item d-none d-lg-block" data-toggle="modal" data-target="#modalPlanes">
+                        <figure class="text-center">
+                            <h1 descripcion="jhklsdhfñlkasddjdfñalskdjdd">PLAN LUNA DE MIEL</h1>
+                        </figure>
+                        <img src="img/luna-de-miel.png" class="img-fluid" width="100%">
+                    </div>
+                    <div class="grid-item d-none d-lg-block" data-toggle="modal" data-target="#modalPlanes">
+                        <figure class="text-center">
+                            <h1 descripcion="fjskdfjsñlkdjfñlsadf">PLAN AVENTURA</h1>
+                        </figure>
+                        <img src="img/plan-aventura.png" class="img-fluid" width="100%">
+                    </div>
+                    <div class="grid-item d-none d-lg-block" data-toggle="modal" data-target="#modalPlanes">
+                        <figure class="text-center">
+                            <h1 descripcion="fjsdlkñjñlkdsjgñdlsfjgfgdfsgf">PLAN SPA</h1>
+                        </figure>
+                        <img src="img/plan-spa.png" class="img-fluid" width="100%">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <!--CONTACTANOS-->
-    <div class="contactenos container-fluid bg-white py-4" id="contactenos">
-        <div class="container text-center">
-            <h1 class="py-sm-4">CONTÁCTENOS</h1>
-            <form>
-                <div class="input-group input-group-lg">
-                    <input type="text" class="form-control mb-3 mr-2 form-control-lg" placeholder="Nombre">
-                    <input type="text" class="form-control mb-3 ml-2 form-control-lg" placeholder="Apellido">
+        <!-- HABITACIONES-->
+        <div class="habitaciones container-fluid bg-light" id="habitaciones">
+            <div class="container">
+                <h1 class="pt-4 text-center">HABITACIONES</h1>
+                <div class="row p-4 text-center">
+                    <div class="col-12 col-lg-4 pb-3 px-0 px-lg-3">
+                        <a href="habitaciones.html">
+                            <figure class="text-center">
+                                <img src="img/habitacion01.png" class="img-fluid" width="100%">
+                                <p class="small py-4 mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <h3 class="py-2 text-gray-dark mb-0">Desde $300 MX</h3>
+                                <h5 class="py-2 text-gray-dark border">Ver detalles <i
+                                        class="fas fa-chevron-right ml-2"></i></h5>
+                                <h1 class="text-white p-3 mx-auto w-50 lead" style="background: #f51b5a">SUITE</h1>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col-12 col-lg-4 pb-3 px-0 px-lg-3">
+                        <a href="habitaciones.html">
+                            <figure class="text-center">
+                                <img src="img/habitacion02.png" class="img-fluid" width="100%">
+                                <p class="small py-4 mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <h3 class="py-2 text-gray-dark mb-0">Desde $300 MX</h3>
+                                <h5 class="py-2 text-gray-dark border">Ver detalles <i
+                                        class="fas fa-chevron-right ml-2"></i></h5>
+                                <h1 class="text-white p-3 mx-auto w-50 lead" style="background: #22c1cc">ESPECIAL</h1>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col-12 col-lg-4 pb-3 px-0 px-lg-3">
+                        <a href="habitaciones.html">
+                            <figure class="text-center">
+                                <img src="img/habitacion03.png" class="img-fluid" width="100%">
+                                <p class="small py-4 mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <h3 class="py-2 text-gray-dark mb-0">Desde $300 MX</h3>
+                                <h5 class="py-2 text-gray-dark border">Ver detalles <i
+                                        class="fas fa-chevron-right ml-2"></i></h5>
+                                <h1 class="text-white p-3 mx-auto w-50 lead" style="background: #1bf564">STANDAR</h1>
+                            </figure>
+                        </a>
+                    </div>
                 </div>
-                <div class="input-group input-group-lg">
-                    <input type="text" class="form-control mb-3 mr-2 form-control-lg" placeholder="Móvil">
-                    <input type="text" class="form-control mb-3 ml-2 form-control-lg" placeholder="Coreo Electrónico">
-                </div>
-                <textarea class="form-control" rows="6" placeholder="Escribe aquí tu mensaje"></textarea>
-                <input class="btn btn-dark my-4 btn-lg py-3 text-uppercase" value="Enviar">
-            </form>
-        </div>
-    </div>
-
-    <!--MAPA-->
-    <div class="mapa container-fluid bg-white p-0">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119108.90520194553!2d-86.85636619964892!3d21.106454068056546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4c28d9b1232d4b%3A0x919068539adfb1da!2sHotel%20Casa%20Maya!5e0!3m2!1ses!2smx!4v1568911153258!5m2!1ses!2smx"
-            width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-        <div class="p-4 info">
-            <h3 class="mt-4 mb-4 text-white text-center"><strong>Visítanos</strong></h3>
-            <p>lorem fnsdnfas,.dnfa.sdnfa.sdnfa.sdkjf</p>
-            <p class="text-justify-content">
-                Microsoft.inc<br>
-                Infinite world.<br>
-                México | CDMX<br>
-                164646-68465
-            </p>
-            <p class="pb-4 text-justify-content">Email: info@microsoft.com<br>
-                Tel: 89-37-54-45
-            </p>
-        </div>
-    </div>
-
-    <!--PIE DE PAGINA-->
-    <footer class="container-fluid p-0">
-        <div class="grid-contenedor">
-            <div class="grid-item d-none d-lg-block pt-2"></div>
-            <div class="grid-item d-none d-lg-block pt-4">
-                <p class="text-white">Lorem, ipsum dolor sit amet consectetur</p>
             </div>
-            <div class="grid-item pt-3">
-                <ul>
-                    <ul>
-                        <a href="#" target="_blank">
-                            <i class="fab fa-facebook-f text-white float-left mx-2 my-3 mr-4"></i>
+        </div>
+
+        <!-- PLANES MOVIL-->
+        <div class="d-block d-lg-none planesMovil jd-slider bg-white" id="planesMovil">
+            <h1 class="text-center py-3">PLANES</h1>
+            <div class="slide-inner">
+                <ul class="slide-area">
+                    <li>
+                        <a href="#modalPlanes" data-toggle="modal" descripcion="Lorem fhjskdhfjlsdfhjls8iofu8g">
+                            <img src="img/plan-romantico.png">
+                            <h6 class="py-2 text-center">ROMÁNTICO</h6>
                         </a>
-                    </ul>
-                    <ul>
-                        <a href="#" target="_blank">
-                            <i class="fab fa-twitter text-white float-left mx-2 my-3 mr-4"></i>
+                    </li>
+                    <li>
+                        <a href="#modalPlanes" data-toggle="modal" descripcion="jhklsdhfñlkasddjdfñalskdjdd">
+                            <img src="img/luna-de-miel.png">
+                            <h6 class="py-2 text-center">LUNA DE MIEL</h6>
                         </a>
-                    </ul>
-                    <ul>
-                        <a href="#" target="_blank">
-                            <i class="fab fa-youtube text-white float-left mx-2 my-3 mr-4"></i>
+                    </li>
+                    <li>
+                        <a href="#modalPlanes" data-toggle="modal" descripcion="fjskdfjsñlkdjfñlsadf">
+                            <img src="img/plan-aventura.png">
+                            <h6 class="py-2 text-center">AVENTURA</h6>
                         </a>
-                    </ul>
-                    <ul>
-                        <a href="#" target="_blank">
-                            <i class="fab fa-instagram text-white float-left mx-2 my-3 mr-4"></i>
+                    </li>
+                    <li>
+                        <a href="#modalPlanes" data-toggle="modal" descripcion="fjsdlkñjñlkdsjgñdlsfjgfgdfsgf">
+                            <img src="img/plan-spa.png">
+                            <h6 class="py-2 text-center">SPA</h6>
                         </a>
-                    </ul>
+                    </li>
                 </ul>
+                <a class="prev" href="#">
+                    <i class="fas fa-angle-left text-muted"></i>
+                </a>
+                <a class="next" href="#">
+                    <i class="fas fa-angle-right text-muted"></i>
+                </a>
+            </div>
+            <div class="controller">
+                <div class="indicate-area"></div>
             </div>
         </div>
-    </footer>
 
-    <!--VENTANA MODAL PLANES-->
-    <div class="modal" id=modalPlanes>
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title"></h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <img src="" class="img-thumbnail">
-                    <p class="py-3"></p>
-                    <div class="text-center">
-                        <a href="habitaciones.html" class="btn btn-primary text-center">Separa tu habitación</a>
+        <!--RECORRIDO POR EL PUEBLO-->
+        <div class="recorridoPueblo container-fluid bg-white pb-5" id="pueblo">
+            <div class="container">
+                <h1 class="pt-5 text-center">RECORRIDO POR EL PUEBLO</h1>
+                <div class="jd-slider slidePueblo">
+                    <div class="slide-inner">
+                        <ul class="slide-area">
+                            <li>
+                                <div class="grid-contenedor pt-4 pb-1 pb-lg-3 px-0 px-lg-5">
+                                    <div class="grid-item">
+                                        <img src="img/pueblo01a.png" class="img-fluid" width="100%">
+                                    </div>
+                                    <div class="grid-item">
+                                        <h1 class="mt-4 mb-0 my-lg-2">LOREMIPSUM</h1>
+                                        <P class="small p-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Quod
+                                            doloribus quis, reprehenderit laborum est tempora, autem ratione, optio
+                                            explicabo ut iure libero deserunt exercitationem vel. Quae maiores officia
+                                            commodi accusantium.</P>
+                                    </div>
+                                    <div class="grid-item d-none d-lg-block">
+                                        <img src="img/pueblo01b.png" class="img-fluid" width="100%">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="grid-contenedor pt-4 pb-1 pb-lg-3 px-0 px-lg-5">
+                                    <div class="grid-item">
+                                        <img src="img/pueblo02a.png" class="img-fluid" width="100%">
+                                    </div>
+                                    <div class="grid-item">
+                                        <h1 class="mt-4 mb-0 my-lg-2">LOREMIPSUM</h1>
+                                        <P class="small p-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Quod
+                                            doloribus quis, reprehenderit laborum est tempora, autem ratione, optio
+                                            explicabo ut iure libero deserunt exercitationem vel. Quae maiores officia
+                                            commodi accusantium.</P>
+                                    </div>
+                                    <div class="grid-item d-none d-lg-block">
+                                        <img src="img/pueblo02b.png" class="img-fluid" width="100%">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="grid-contenedor pt-4 pb-1 pb-lg-3 px-0 px-lg-5">
+                                    <div class="grid-item">
+                                        <img src="img/pueblo03a.png" class="img-fluid" width="100%">
+                                    </div>
+                                    <div class="grid-item">
+                                        <h1 class="mt-4 mb-0 my-lg-2">LOREMIPSUM</h1>
+                                        <P class="small p-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Quod
+                                            doloribus quis, reprehenderit laborum est tempora, autem ratione, optio
+                                            explicabo ut iure libero deserunt exercitationem vel. Quae maiores officia
+                                            commodi accusantium.</P>
+                                    </div>
+                                    <div class="grid-item d-none d-lg-block">
+                                        <img src="img/pueblo03b.png" class="img-fluid" width="100%">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="d-none d-md-block prev" href="#">
+                        <i class="fas fa-angle-left fa-2x" style="color:#1bf564"></i>
+                    </a>
+                    <a class="d-none d-md-block next" href="#">
+                        <i class="fas fa-angle-right fa-2x" style="color: #f51b5a"></i>
+                    </a>
+                    <div class="controller">
+                        <div class="indicate-area"></div>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
-                </div>
             </div>
         </div>
-    </div>
 
-    <!--VENTANA MODAL INGRESO-->
-    <div class="modal" id="modalIngreso">
-        <div class="modal-dialog">
-            <div class="modal-content">
+        <!--RESTAURANTE-->
+        <div class="fondoRestaurante container-fluid">
 
-                <div class="modal-header bg-secondary text-white">
-                    <h4 class="modal-title">Ingresar</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <!--INGRESO CON REDES SOCIALES-->
-                <div class="modal-body">
-                    <div class="d-flex">
-                        <div class=" px-2 flex-fill">
-                            <p class="p-2 bg-danger text-center text-white">
-                                <i class="fab fa-google"></i>
-                                Ingreso Google
-                            </p>
-                        </div>
-                        <div class="px-2 flex-fill">
-                            <p class="p-2 bg-primary text-center text-white">
-                                <i class="fab fa-facebook"></i>
-                                Ingreso con Facebook
-                            </p>
+        </div>
+
+        <div class="restaurante container-fluid pt-5" id="restaurante">
+            <div class="container">
+                <div class="grid-contenedor">
+                    <div class="grid-item carta">
+                        <div class="row p-1 p-lg-5">
+                            <div class="col-6 col-xs-6 col-md-4 text-center p-1">
+                                <img src="img/plato01.png" class="img-fluid w-50 rounded-circle">
+                                <p class="py-2">Lorem ipsum dolor sit</p>
+                            </div>
+                            <div class="col-6 col-xs-6 col-md-4 text-center p-1">
+                                <img src="img/plato02.png" class="img-fluid w-50 rounded-circle">
+                                <p class="py-2">Lorem ipsum dolor sit</p>
+                            </div>
+                            <div class="col-6 col-xs-6 col-md-4 text-center p-1">
+                                <img src="img/plato03.png" class="img-fluid w-50 rounded-circle">
+                                <p class="py-2">Lorem ipsum dolor sit</p>
+                            </div>
+                            <div class="col-6 col-xs-6 col-md-4 text-center p-1">
+                                <img src="img/plato04.png" class="img-fluid w-50 rounded-circle">
+                                <p class="py-2">Lorem ipsum dolor sit</p>
+                            </div>
+                            <div class="col-6 col-xs-6 col-md-4 text-center p-1">
+                                <img src="img/plato05.png" class="img-fluid w-50 rounded-circle">
+                                <p class="py-2">Lorem ipsum dolor sit</p>
+                            </div>
+                            <div class="col-6 col-xs-6 col-md-4 text-center p-1">
+                                <img src="img/plato06.png" class="img-fluid w-50 rounded-circle">
+                                <p class="py-2">Lorem ipsum dolor sit</p>
+                            </div>
+                            <div class="col-12 text-center d-block d-lg-none">
+                                <button class="btn btn-warning text-uppercase mb-5 volverCarta">Volver</button>
+                            </div>
                         </div>
                     </div>
-                    <!--INGRESO DIRECTO-->
-                    <hr class="mt-0">
-                    <form>
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-envelope"></i></span>
-                            </div>
-                            <input type="email" class="form-control" placeholder="Email">
-                        </div>
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-lock"></i></span>
-                            </div>
-                            <input type="password" class="form-control" placeholder="Contraseña">
-                        </div>
-                        <input type="submit" class="btn btn-secondary btn-block" value="Ingresar">
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    ¿No tienes una cuenta registrada? |
-                    <strong>
-                        <a href="#modalRegistro" data-toggle="modal" data-dismiss="modal">Registrarse </a>
-                    </strong>
+                    <div class="grid-item bloqueRestaurant">
+                        <h1 class="mt-4 my-lg-5">RESTAURANTE</h1>
+                        <p class="p-4 my-lg-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus amet
+                            eum
+                            earum consequatur molestias assumenda voluptates laudantium fuga perferendis mollitia rerum
+                            fugit ullam qui asperiores officiis beatae harum, velit impedit?</p>
+                        <button class="btn btn-danger text-uppercase mb-5 verCarta">Ver la carta</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!--VENTANA MODAL REGISTRO-->
-    <div class="modal" id="modalRegistro">
-        <div class="modal-dialog">
-            <div class="modal-content">
+        <!--CONTACTANOS-->
+        <div class="contactenos container-fluid bg-white py-4" id="contactenos">
+            <div class="container text-center">
+                <h1 class="py-sm-4">CONTÁCTENOS</h1>
+                <form>
+                    <div class="input-group input-group-lg">
+                        <input type="text" class="form-control mb-3 mr-2 form-control-lg" placeholder="Nombre">
+                        <input type="text" class="form-control mb-3 ml-2 form-control-lg" placeholder="Apellido">
+                    </div>
+                    <div class="input-group input-group-lg">
+                        <input type="text" class="form-control mb-3 mr-2 form-control-lg" placeholder="Móvil">
+                        <input type="text" class="form-control mb-3 ml-2 form-control-lg"
+                            placeholder="Coreo Electrónico">
+                    </div>
+                    <textarea class="form-control" rows="6" placeholder="Escribe aquí tu mensaje"></textarea>
+                    <input class="btn btn-dark my-4 btn-lg py-3 text-uppercase" value="Enviar">
+                </form>
+            </div>
+        </div>
 
-                <div class="modal-header bg-secondary text-white">
-                    <h4 class="modal-title">Registrarse</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <!--MAPA-->
+        <div class="mapa container-fluid bg-white p-0">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119108.90520194553!2d-86.85636619964892!3d21.106454068056546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4c28d9b1232d4b%3A0x919068539adfb1da!2sHotel%20Casa%20Maya!5e0!3m2!1ses!2smx!4v1568911153258!5m2!1ses!2smx"
+                width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <div class="p-4 info">
+                <h3 class="mt-4 mb-4 text-white text-center"><strong>Visítanos</strong></h3>
+                <p>lorem fnsdnfas,.dnfa.sdnfa.sdnfa.sdkjf</p>
+                <p class="text-justify-content">
+                    Microsoft.inc<br>
+                    Infinite world.<br>
+                    México | CDMX<br>
+                    164646-68465
+                </p>
+                <p class="pb-4 text-justify-content">Email: info@microsoft.com<br>
+                    Tel: 89-37-54-45
+                </p>
+            </div>
+        </div>
+
+        <!--PIE DE PAGINA-->
+        <footer class="container-fluid p-0">
+            <div class="grid-contenedor">
+                <div class="grid-item d-none d-lg-block pt-2"></div>
+                <div class="grid-item d-none d-lg-block pt-4">
+                    <p class="text-white">Lorem, ipsum dolor sit amet consectetur</p>
                 </div>
-                <!--INGRESO CON REDES SOCIALES-->
-                <div class="modal-body">
-                    <div class="d-flex">
-                        <div class=" px-2 flex-fill">
-                            <p class="p-2 bg-danger text-center text-white">
-                                <i class="fab fa-google"></i>
-                                Ingreso Google
-                            </p>
-                        </div>
-                        <div class="px-2 flex-fill">
-                            <p class="p-2 bg-primary text-center text-white">
-                                <i class="fab fa-facebook"></i>
-                                Ingreso con Facebook
-                            </p>
+                <div class="grid-item pt-3">
+                    <ul>
+                        <ul>
+                            <a href="#" target="_blank">
+                                <i class="fab fa-facebook-f text-white float-left mx-2 my-3 mr-4"></i>
+                            </a>
+                        </ul>
+                        <ul>
+                            <a href="#" target="_blank">
+                                <i class="fab fa-twitter text-white float-left mx-2 my-3 mr-4"></i>
+                            </a>
+                        </ul>
+                        <ul>
+                            <a href="#" target="_blank">
+                                <i class="fab fa-youtube text-white float-left mx-2 my-3 mr-4"></i>
+                            </a>
+                        </ul>
+                        <ul>
+                            <a href="#" target="_blank">
+                                <i class="fab fa-instagram text-white float-left mx-2 my-3 mr-4"></i>
+                            </a>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <!--VENTANA MODAL PLANES-->
+        <div class="modal" id=modalPlanes>
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title"></h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="" class="img-thumbnail">
+                        <p class="py-3"></p>
+                        <div class="text-center">
+                            <a href="habitaciones.html" class="btn btn-primary text-center">Separa tu habitación</a>
                         </div>
                     </div>
-                    <!--REGISTRO DIRECTO-->
-                    <hr class="mt-0">
-                    <form>
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-user"></i></span>
-                            </div>
-                            <input type="text" class="form-control" placeholder="Usuario">
-                        </div>
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-user"></i></span>
-                            </div>
-                            <input type="email" class="form-control" placeholder="Email">
-                        </div>
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-lock"></i></span>
-                            </div>
-                            <input type="password" class="form-control" placeholder="Contraseña">
-                        </div>
-                        <input type="submit" class="btn btn-secondary btn-block" value="Registrarse">
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    ¿Ya tienes una cuenta registrada? |
-                    <strong>
-                        <a href="#modalIngreso" data-toggle="modal" data-dismiss="modal">Ingresar</a>
-                    </strong>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <script src="js/script.js"></script>
+        <!--VENTANA MODAL INGRESO-->
+        <div class="modal" id="modalIngreso">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header bg-secondary text-white">
+                        <h4 class="modal-title">Ingresar</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <!--INGRESO CON REDES SOCIALES-->
+                    <div class="modal-body">
+                        <div class="d-flex">
+                            <div class=" px-2 flex-fill">
+                                <p class="p-2 bg-danger text-center text-white">
+                                    <i class="fab fa-google"></i>
+                                    Ingreso Google
+                                </p>
+                            </div>
+                            <div class="px-2 flex-fill">
+                                <p class="p-2 bg-primary text-center text-white">
+                                    <i class="fab fa-facebook"></i>
+                                    Ingreso con Facebook
+                                </p>
+                            </div>
+                        </div>
+                        <!--INGRESO DIRECTO-->
+                        <hr class="mt-0">
+                        <form>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                </div>
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                                </div>
+                                <input type="password" class="form-control" placeholder="Contraseña">
+                            </div>
+                            <input type="submit" class="btn btn-secondary btn-block" value="Ingresar">
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        ¿No tienes una cuenta registrada? |
+                        <strong>
+                            <a href="#modalRegistro" data-toggle="modal" data-dismiss="modal">Registrarse </a>
+                        </strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--VENTANA MODAL REGISTRO-->
+        <div class="modal" id="modalRegistro">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header bg-secondary text-white">
+                        <h4 class="modal-title">Registrarse</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <!--INGRESO CON REDES SOCIALES-->
+                    <div class="modal-body">
+                        <div class="d-flex">
+                            <div class=" px-2 flex-fill">
+                                <p class="p-2 bg-danger text-center text-white">
+                                    <i class="fab fa-google"></i>
+                                    Ingreso Google
+                                </p>
+                            </div>
+                            <div class="px-2 flex-fill">
+                                <p class="p-2 bg-primary text-center text-white">
+                                    <i class="fab fa-facebook"></i>
+                                    Ingreso con Facebook
+                                </p>
+                            </div>
+                        </div>
+                        <!--REGISTRO DIRECTO-->
+                        <hr class="mt-0">
+                        <form>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Usuario">
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                </div>
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                                </div>
+                                <input type="password" class="form-control" placeholder="Contraseña">
+                            </div>
+                            <input type="submit" class="btn btn-secondary btn-block" value="Registrarse">
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        ¿Ya tienes una cuenta registrada? |
+                        <strong>
+                            <a href="#modalIngreso" data-toggle="modal" data-dismiss="modal">Ingresar</a>
+                        </strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/script.js"></script>
 </body>
 
 </html>
