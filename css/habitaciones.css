@@ -63,6 +63,14 @@
 .colDerHabitaciones{
 	transition:0.3s all;
 }
+.colIzqHabitaciones p{
+    line-height: 30px;
+    color: #666666;
+}
+.colorTitulos{
+    color: crimson;
+    text-align: center;
+}
 
 /*TESTIMONIOS*/
 
