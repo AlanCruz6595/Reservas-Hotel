@@ -72,6 +72,10 @@
     text-align: center;
 }
 
+.colDerHabitaciones{
+    transition: 0.3s all;
+}
+
 /*TESTIMONIOS*/
 
 .testimonios{

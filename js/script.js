@@ -35,6 +35,8 @@ $(".mostrarBloqueReservas").click(function(){
         $(".reservaFlecha").removeClass("fa-caret-square-down");
         $(".reservaFlecha").addClass("fa-caret-square-up");
     }
+
+    posicionBloqueReservas();
 })
 
 /*ANIMACIONES DEL SCROLL*/
@@ -59,6 +61,8 @@ $(window).scroll(function(){
             $(".reservaFlecha").addClass("fa-caret-square-up");
         }       
     }
+
+    posicionBloqueReservas();
 })
 
 /*BOTONES DE IDIOMAS*/
@@ -299,3 +303,19 @@ $(".colIzqHabitaciones button").click(function(){
 	}
 
 })
+
+/*POSICION BLOQUE RESERVAS*/
+function posicionBloqueReservas(){
+    if($(".mostrarBloqueReservas").attr("modo")=="abajo"){
+
+        $(".colDerHabitaciones").css({"margin-top":"100px"})
+
+    }
+
+    if($(".mostrarBloqueReservas").attr("modo")=="arriba"){
+
+        $(".colDerHabitaciones").css({"margin-top":"20px"})
+    }
+}
+
+posicionBloqueReservas();
