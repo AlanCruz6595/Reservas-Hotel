@@ -319,3 +319,8 @@ function posicionBloqueReservas(){
 }
 
 posicionBloqueReservas();
+
+if(window.matchMedia("(max-width:768px)").matches){
+
+    $(".infoHabitacion").css({"margin-top":$("header").height()})
+}

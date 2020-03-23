@@ -107,3 +107,31 @@
 .colorTitulo {
     color: black;
 }
+
+/*TESTIMONIOS*/
+
+@media (max-width:768px){
+    
+    .infoHabitacion .nav-link{
+        border-right: 0;
+        border: 1px solid #999;
+    }
+    .infoHabitacion .colIzqHabitaciones .cabeceraHabitacion{
+        background: black;
+    }
+    .infoHabitacion .colIzqHabitaciones ul li{
+        background: #333;
+    }
+    .infoHabitacion .colIzqHabitaciones ul li .active{
+        background-color: black !important;
+    }
+    .infoHabitacion .colIzqHabitaciones ul li a.active i{
+        display: none;
+    }
+    .infoHabitacion .categoria{
+        color: #af9475 !important;
+    }
+    .descripcionHabitacion h1{
+        font-size: 30px;
+    }
+}
