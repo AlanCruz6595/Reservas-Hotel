@@ -306,13 +306,20 @@ $(".colIzqHabitaciones button").click(function(){
 
 /*POSICION BLOQUE RESERVAS*/
 function posicionBloqueReservas(){
-    if($(".mostrarBloqueReservas").attr("modo")=="abajo"){
+    if(window.matchMedia("(min-width:769px)").mathes){
 
-        $(".colDerHabitaciones").css({"margin-top":"100px"})
+        if($(".mostrarBloqueReservas").attr("modo")=="abajo"){
 
-    }
+            $(".colDerHabitaciones").css({"margin-top":"100px"})
 
-    if($(".mostrarBloqueReservas").attr("modo")=="arriba"){
+        }
+
+        if($(".mostrarBloqueReservas").attr("modo")=="arriba"){
+
+            $(".colDerHabitaciones").css({"margin-top":"20px"})
+        }
+    
+    }else{
 
         $(".colDerHabitaciones").css({"margin-top":"20px"})
     }
@@ -322,5 +329,5 @@ posicionBloqueReservas();
 
 if(window.matchMedia("(max-width:768px)").matches){
 
-    $(".infoHabitacion").css({"margin-top":$("header").height()})
+    $(".infoHabitacion .colIzqHabitaciones").css({"margin-top":$("header").height()})
 }

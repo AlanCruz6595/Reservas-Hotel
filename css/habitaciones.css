@@ -116,7 +116,7 @@
         border-right: 0;
         border: 1px solid #999;
     }
-    .infoHabitacion .colIzqHabitaciones .cabeceraHabitacion{
+    .infoHabitacion .colIzqHabitaciones .cabeceraHabitaciones{
         background: black;
     }
     .infoHabitacion .colIzqHabitaciones ul li{
@@ -133,5 +133,8 @@
     }
     .descripcionHabitacion h1{
         font-size: 30px;
+    }
+    .colDerHabitaciones{
+        margin-top:0px;
     }
 }
