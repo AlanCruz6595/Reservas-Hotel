@@ -67,3 +67,34 @@
 .colDerHabitaciones{
     transition: 0.3s all;
 }
+
+/*TESTIMONIOS MEDIA QUERY*/
+
+@media (max-width:768px){
+    
+    .infoReservas .nav-link{
+        border-right: 0;
+        border: 1px solid #999;
+    }
+    .infoReservas .colIzqReservas .cabeceraReservas{
+        background: black;
+    }
+    .infoReservas .colIzqReservas ul li{
+        background: #333;
+    }
+    .infoReservas .colIzqReservas ul li .active{
+        background-color: black !important;
+    }
+    .infoReservas .colIzqReservas ul li a.active i{
+        display: none;
+    }
+    .infoReservas .categoria{
+        color: #af9475 !important;
+    }
+    .descripcionReservas h1{
+        font-size: 30px;
+    }
+    .colDerHabitaciones{
+        margin-top:0px;
+    }
+}

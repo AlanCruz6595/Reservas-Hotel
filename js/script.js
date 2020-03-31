@@ -331,3 +331,13 @@ if(window.matchMedia("(max-width:768px)").matches){
 
     $(".infoHabitacion .colIzqHabitaciones").css({"margin-top":$("header").height()})
 }
+
+/*CALENDARIO*/
+$('#calendar').fullCalendar({
+    header:{
+        left:'prev',
+        center:'title',
+        right:'next',
+    },
+    
+});
