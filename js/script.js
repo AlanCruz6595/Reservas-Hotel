@@ -339,5 +339,4 @@ $('#calendar').fullCalendar({
         center:'title',
         right:'next',
     },
-    
 });
