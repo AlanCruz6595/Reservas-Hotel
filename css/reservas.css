@@ -1,100 +1,109 @@
 /*INFO-RESERVAS*/
 
-.infoReservas{
-	position: relative;
-	margin-top:-20px;
+.infoReservas {
+    position: relative;
+    margin-top: -20px;
 }
 
-.infoReservas .colIzqReservas{
-	position:relative;
-	margin-top:-170px;
+.infoReservas .colIzqReservas {
+    position: relative;
+    margin-top: -170px;
 }
 
-.infoReservas .colIzqReservas ul li a{
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 100;
-	font-size:18px;
+.infoReservas .colIzqReservas ul li a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 18px;
 }
 
-.infoReservas .colIzqReservas ul li a.active{
-	color:#FFE060 !important;
+.infoReservas .colIzqReservas ul li a.active {
+    color: #FFE060 !important;
 }
 
-.infoReservas .colIzqReservas .nav-link{
-	border-right:1px solid white;
+.infoReservas .colIzqReservas .nav-link {
+    border-right: 1px solid white;
 }
 
 
-.infoReservas .colIzqReservas .fa-angle-right:before{
+.infoReservas .colIzqReservas .fa-angle-right:before {
     content: "\f105";
-    background: rgba(255,255,255,.8);
+    background: rgba(255, 255, 255, .8);
     padding: 20px 10px;
- }
+}
 
 .infoReservas .colIzqReservas .fa-angle-left:before {
     content: "\f104";
-    background: rgba(255,255,255,.8);
+    background: rgba(255, 255, 255, .8);
     padding: 20px 10px;
 }
 
-.colIzqReservas button{
-	border-radius:0;
-	background:black;
-	color:white;
+.colIzqReservas button {
+    border-radius: 0;
+    background: black;
+    color: white;
 }
 
-.colIzqReservas p{
-	line-height:30px;
-	color:#666;
+.colIzqReservas p {
+    line-height: 30px;
+    color: #666;
 }
 
-.colorTitulos{
-	color:#847059;
+.colorTitulos {
+    color: #847059;
 }
 
-.colDerReservas{
-	transition:0.3s all;
+.colDerReservas {
+    transition: 0.3s all;
 }
-.colIzqReservas p{
+
+.colIzqReservas p {
     line-height: 30px;
     color: #666666;
 }
-.colorTitulos{
+
+.colorTitulos {
     color: crimson;
     text-align: center;
 }
 
-.colDerHabitaciones{
+.colDerHabitaciones {
     transition: 0.3s all;
 }
 
 /*TESTIMONIOS MEDIA QUERY*/
 
-@media (max-width:768px){
-    
-    .infoReservas .nav-link{
+@media (max-width:768px) {
+
+    .infoReservas .nav-link {
         border-right: 0;
         border: 1px solid #999;
     }
-    .infoReservas .colIzqReservas .cabeceraReservas{
+
+    .infoReservas .colIzqReservas .cabeceraReservas {
         background: black;
     }
-    .infoReservas .colIzqReservas ul li{
+
+    .infoReservas .colIzqReservas ul li {
         background: #333;
     }
-    .infoReservas .colIzqReservas ul li .active{
+
+    .infoReservas .colIzqReservas ul li .active {
         background-color: black !important;
     }
-    .infoReservas .colIzqReservas ul li a.active i{
+
+    .infoReservas .colIzqReservas ul li a.active i {
         display: none;
     }
-    .infoReservas .categoria{
+
+    .infoReservas .categoria {
         color: #af9475 !important;
     }
-    .descripcionReservas h1{
+
+    .descripcionReservas h1 {
         font-size: 30px;
     }
-    .colDerHabitaciones{
-        margin-top:0px;
+
+    .colDerHabitaciones {
+        margin-top: 0px;
     }
 }
