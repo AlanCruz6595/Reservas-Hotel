@@ -342,11 +342,17 @@ function posicionBloqueReservas() {
             $(".colDerHabitaciones").css({
                 "margin-top": "20px"
             })
+            $(".colDerReservas").css({
+                "margin-top": "20px"
+            })
         }
 
     } else {
 
         $(".colDerHabitaciones").css({
+            "margin-top": "20px"
+        })
+        $(".colDerReservas").css({
             "margin-top": "20px"
         })
     }
@@ -357,6 +363,9 @@ posicionBloqueReservas();
 if (window.matchMedia("(max-width:768px)").matches) {
 
     $(".infoHabitacion .colIzqHabitaciones").css({
+        "margin-top": $("header").height()
+    })
+    $(".infoReservas .colIzqReservas").css({
         "margin-top": $("header").height()
     })
 }
