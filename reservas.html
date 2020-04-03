@@ -279,12 +279,83 @@
                         </div>
                         <div class="clearfix"></div>
                         <div id="calendar"></div>
+
+                        <!--MODIFICAR FECHAS-->
+                        <h6 class="lead pt-4 pb-2">Puede modificar la fecha de acuerdo a los días disponibles</h6>
+                        <div class="container mb-3">
+                            <div class="row py-2" style="background:#509cc3">
+                                <div class="col-6 col-md-3 input-group pr-1">
+                                    <input type="text" class="form-control datepicker entrada" placeholder="Entrada">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><i
+                                                class="far fa-calendar-alt small text-gray-dark"></i></span>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3 input-group pl-1">
+                                    <input type="text" class="form-control datepicker salida" placeholder="Salida">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><i
+                                                class="far fa-calendar-alt small text-gray-dark"></i></span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 mt-2 mt-lg-0 input-group">
+                                    <a href="reservas.html" class="w-100">
+                                        <input type="button" class="btn btn-block btn-md text-white"
+                                            value="Ver disponibilidad" style="background: black;">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <!--BLOQUE DERECHO-->
                 <div class="col-12 mt-0 col-xs-12 col-lg-4 colDerReservas">
-
+                    <h4 class="mt-lg-5">Codigo de la Reserva:</h4>
+                    <h2 style="color: crimson;"><strong>K3234432</strong></h2>
+                    <div class="form-group">
+                        <label>Ingreso:</label>
+                        <input type="date" class="form-control" value="2019-30-13" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Salida:</label>
+                        <input type="date" class="form-control" value="2019-30-15" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Habitación:</label>
+                        <input type="text" class="form-control" value="Habitación Suite Oriental" readonly>
+                        <img src="img/oriental.png" class="img-fluid">
+                    </div>
+                    <div class="form-group">
+                        <label>Plan:</label>
+                        <select class="form-control">
+                            <option value="continental">Plan Continental</option>
+                            <option value="americano">Plan Americano</option>
+                            <option value="romantico">Plan Romantio</option>
+                            <option value="aventura">Plan Aventura</option>
+                            <option value="spa">Plan SPA</option>
+                            <option value="lunademiel">Plan Luna de Miel</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Personas:</label>
+                        <select class="form-control">
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="row py-4">
+                        <div class="col-12 col-lg-6 col-xl-7 text-center text-lg-left">
+                            <h1>$300 USD</h1>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xl-5">
+                            <a href="perfil.html">
+                                <button class="btn btn-dark btn-lg w-100 mb-5">PAGAR<br>RESERVA</button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
                 <!--CONTACTANOS-->

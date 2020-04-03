@@ -331,6 +331,9 @@ function posicionBloqueReservas() {
             $(".colDerHabitaciones").css({
                 "margin-top": "100px"
             })
+            $(".colDerReservas").css({
+                "margin-top": "100px"
+            })
 
         }
 
