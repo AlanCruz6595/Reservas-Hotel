@@ -334,7 +334,9 @@ function posicionBloqueReservas() {
             $(".colDerReservas").css({
                 "margin-top": "100px"
             })
-
+            $(".colDerPerfil").css({
+                "margin-top": "100px"
+            })
         }
 
         if ($(".mostrarBloqueReservas").attr("modo") == "arriba") {
@@ -345,6 +347,9 @@ function posicionBloqueReservas() {
             $(".colDerReservas").css({
                 "margin-top": "20px"
             })
+            $(".colDerPerfil").css({
+                "margin-top": "20px"
+            })
         }
 
     } else {
@@ -353,6 +358,9 @@ function posicionBloqueReservas() {
             "margin-top": "20px"
         })
         $(".colDerReservas").css({
+            "margin-top": "20px"
+        })
+        $(".colDerPerfil").css({
             "margin-top": "20px"
         })
     }
@@ -366,6 +374,9 @@ if (window.matchMedia("(max-width:768px)").matches) {
         "margin-top": $("header").height()
     })
     $(".infoReservas .colIzqReservas").css({
+        "margin-top": $("header").height()
+    })
+    $(".infoPerfil .colIzqPerfil").css({
         "margin-top": $("header").height()
     })
 }

@@ -1,0 +1,80 @@
+/*INFO-PERFIL*/
+
+.infoPerfil {
+    position: relative;
+    margin-top: -20px;
+}
+
+.infoPerfil .colIzqPerfil {
+    position: relative;
+    margin-top: -170px;
+}
+
+.colIzqPerfil .descripcionPerfil {
+    border-right: 1px solid #eee;
+}
+
+.colIzqPerfil .descripcionPerfil .card-header a{
+    font-family: 'Open Sans' sans-serif;
+    font-weight: 100;
+    color: #777;
+    font-size: 22px;
+    line-height: 40px;
+}
+ 
+.colDerPerfil {
+    transition: 0.3s all;
+}
+
+.colDerPerfil thead{
+    background-color: black;
+    color: white;
+
+}
+
+.colDerPerfil thead tr td{
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 100;
+}
+
+table-striped tbody tr:nth-of-type(odd){
+    border: 100%;
+}
+
+/*TESTIMONIOS MEDIA QUERY*/
+
+@media (max-width:768px) {
+
+    .infoPerfil .nav-link {
+        border-right: 0;
+        border: 1px solid #999;
+    }
+
+    .infoPerfil .colIzqPerfil .cabeceraPerfil {
+        background: black;
+    }
+
+    .infoPerfil .colIzqPerfil ul li {
+        background: #333;
+    }
+
+    .infoPerfil .colIzqPerfil ul li .active {
+        background-color: black !important;
+    }
+
+    .infoReservas .colIzqReservas ul li a.active i {
+        display: none;
+    }
+
+    .infoReservas .categoria {
+        color: #af9475 !important;
+    }
+
+    .descripcionReservas h1 {
+        font-size: 30px;
+    }
+
+    .colDerHabitaciones {
+        margin-top: 0px;
+    }
+}
